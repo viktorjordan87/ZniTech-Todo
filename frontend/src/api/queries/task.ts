@@ -139,7 +139,7 @@ const updateTaskOrder = async (data: { id: string; order: number }[]) => {
         updatedAt: new Date(response.data.updatedAt),
       };
 
-      const parsedData = TaskSchema.safeParse(transformedData);
+      const parsedData = TaskSchema.array().safeParse(transformedData);
 
       if (parsedData.success) {
         return parsedData.data;
