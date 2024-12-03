@@ -52,7 +52,7 @@ export const Tasks = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen mx-auto w-11/12 sm:w-3/5 md:w-2/5">
+    <div className="flex justify-center items-start sm:items-center min-h-screen mx-auto w-11/12 sm:w-3/5 md:w-2/5">
       <div className="todos-container p-10 sm:border border-gray-300 rounded-md w-full">
         <CreatForm length={localTasks.length} />
 
