@@ -3,6 +3,9 @@
 1. Create two mysql databases for prisma, one database for the real datas, the other one which will be called ...-shadow. Prisma use internally for migrations.
 2. Fill out the mysql creditentials in the backend .env file
 
+Run the following command to creat mysql databases
+npx prisma migrate deploy
+
 # Development
 
 1. npm install - in the backend and in the frontend folder
